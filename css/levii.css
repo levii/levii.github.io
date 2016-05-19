@@ -3,16 +3,19 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: 100;
+    font-size: 60px;
 }
 
 h2 {
-    font-size: 42px;
-    font-weight: 100;
+    font-size: 54px;
+}
+
+h3 {
+    font-size: 48px;
 }
 
 .text-vertical-center {
@@ -33,16 +36,27 @@ h2 {
 
 .header p {
     font-size: 36px;
-    font-weight: 100;
 }
 
 /* Products */
 .products {
-    padding: 10% 0px;
+    display: table;
+    width: 100%;
+    height: 100%;
 }
 
 .products h2 {
-    padding: 0px 0px 10% 0px;
+    padding-bottom: 10%;
+}
+
+.products h3 {
+    padding-top: 5%;
+    color: #1565C0;
+}
+
+.products a:focus,
+.products a:hover {
+    text-decoration: none;
 }
 
 .products img {
@@ -52,17 +66,38 @@ h2 {
 
 /* Company */
 .company {
-    padding: 10% 0px;
-    background-color: #F5F5F5;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA;
 }
 
 .company h2 {
-    padding: 0px 0px 10% 0px;
+    padding-bottom: 10%;
+}
+
+.company-info {
+    display: inline-block;
+}
+
+.company-info-left {
+    width: 25%;
+    font-size: 18px;
+    text-align: left;
+    border-top-style: none !important;
+}
+
+.company-info-right {
+    width: 50%;
+    font-size: 18px;
+    text-align: left;
+    border-top-style: none !important;
 }
 
 /* Footer */
 .footer {
-    padding: 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer p {
