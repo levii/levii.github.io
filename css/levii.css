@@ -34,8 +34,12 @@ h3 {
     background-position: center center;
 }
 
+.header h1 {
+    padding-bottom: 5%;
+}
+
 .header p {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 /* Products */
