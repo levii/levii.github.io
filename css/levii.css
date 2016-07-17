@@ -2,26 +2,15 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
     font-weight: 100;
+    color: #212121;
 }
 
-h1 {
-    font-size: 60px;
-}
-
-h2 {
-    font-size: 54px;
-}
-
-h3 {
-    font-size: 48px;
-}
-
-.text-vertical-center {
+.text-horizontal-vertical-center {
     display: table-cell;
-    vertical-align: middle;
     text-align: center;
+    vertical-align: middle;
 }
 
 /* Header */
@@ -32,15 +21,18 @@ h3 {
     background-image: url('../images/bg.jpg');
     background-size: cover;
     background-position: center center;
-    color: #fff;
 }
 
 .header h1 {
-    padding-bottom: 5%;
+    font-weight: 100;
+    color: #fff;
+    margin: 0;
 }
 
 .header p {
-    font-size: 24px;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 0;
 }
 
 /* Products */
@@ -48,25 +40,28 @@ h3 {
     display: table;
     width: 100%;
     height: 100%;
+    padding: 36px 0;
+}
+
+.products a {
+    text-decoration: none;
+    color: #1565c0;
+}
+
+.products h1 {
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 36px;
 }
 
 .products h2 {
-    padding-bottom: 10%;
-}
-
-.products h3 {
-    padding-top: 5%;
-    color: #1565C0;
-}
-
-.products a:focus,
-.products a:hover {
-    text-decoration: none;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .products img {
-    width: 256px;
-    max-width: 50%;
+    width: 144px;
 }
 
 /* Company */
@@ -74,11 +69,14 @@ h3 {
     display: table;
     width: 100%;
     height: 100%;
-    background-color: #FAFAFA;
+    background-color: #f5f5f5;
+    padding: 36px 0;
 }
 
-.company h2 {
-    padding-bottom: 10%;
+.company h1 {
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 36px;
 }
 
 .company-info {
@@ -86,25 +84,79 @@ h3 {
 }
 
 .company-info-left {
-    width: 25%;
-    font-size: 18px;
+    font-weight: 400;
     text-align: left;
-    border-top-style: none !important;
 }
 
 .company-info-right {
-    width: 50%;
-    font-size: 18px;
     text-align: left;
-    border-top-style: none !important;
+    margin-bottom: 7px;
 }
 
 /* Footer */
 .footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 .footer p {
-    color: #777;
+    color: #9e9e9e;
+    margin: 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .header h1 {
+        font-size: 5.4rem;
+    }
+
+    .header p {
+        font-size: 2.1rem;
+        margin-top: 1.05rem;
+    }
+
+    .products {
+        padding: 5.4rem 0;
+    }
+
+    .products h1 {
+        font-size: 5.4rem;
+        margin-bottom: 5.4rem;
+    }
+
+    .products h2 {
+        font-size: 4.5rem;
+        margin-top: 2.25rem;
+    }
+
+    .products img {
+        width: 21.6rem;
+    }
+
+    .company {
+        padding: 5.4rem 0;
+    }
+
+    .company h1 {
+        font-size: 5.4rem;
+        margin-bottom: 5.4rem;
+    }
+
+    .company-info-left {
+        font-size: 2.1rem;
+    }
+
+    .company-info-right {
+        font-size: 2.1rem;
+        margin-bottom: 1.05rem;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
